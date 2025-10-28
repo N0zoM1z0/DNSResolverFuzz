@@ -43,7 +43,7 @@ dns_sw_name_list = ['bind9', 'unbound', 'powerdns', 'knot', 'maradns', 'techniti
 ## image tables
 bind9_image = 'resolverfuzz-bind9:9.18.41'
 unbound_image = 'resolverfuzz-unbound:1.24.1'
-powerdns_image = 'resolverfuzz-powerdns:4.7.0'
+powerdns_image = 'resolverfuzz-powerdns:4.9.0'
 knot_image = 'resolverfuzz-knot:5.5.0'
 maradns_image = 'resolverfuzz-maradns:3.5.0022'
 technitium_image = 'resolverfuzz-technitium:10.0.1'

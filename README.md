@@ -24,7 +24,7 @@ conda activate resolverfuzz
 # from ctypes import cdll
 # LIBC = cdll.LoadLibrary("/usr/lib/x86_64-linux-gnu/libc.so.6")
 PYTHON_PATH=$(which python)
-sudo $PYTHON_PATH main_recursive.py --unit_size 2 --payload_num 6 > log.txt 2>&1
+sudo $PYTHON_PATH main_recursive.py --unit_size 2 --payload_num 2 > log.txt 2>&1
 
 ls -R recursive_test_res
 
@@ -48,3 +48,7 @@ python cache_analyzer.py --res_folder ../../test_infra/recursive_test_res
 ```
 
 Q：能不能把这些库更新到最新版本？要解决依赖报错问题
+- bind9 -> 9.18.41
+- unbound -> 1.24.1
+- maradns -> 这个有问题，原版也一直No Response
+- powerdns -> 4.9.0

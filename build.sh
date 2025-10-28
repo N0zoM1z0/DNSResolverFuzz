@@ -23,8 +23,8 @@ echo "[2/9] Building docker image resolverfuzz-unbound finished..."
 sudo docker build -f resolverfuzz-knot.Dockerfile -t resolverfuzz-knot:5.5.0 .
 echo "[3/9] Building docker image resolverfuzz-knot finished..."
 
-# PowerDNS Recursor 4.7.0
-sudo docker build -f resolverfuzz-powerdns.Dockerfile -t resolverfuzz-powerdns:4.7.0 .
+# PowerDNS Recursor 4.9.0 [modified from 4.7.0]
+sudo docker build -f resolverfuzz-powerdns.Dockerfile -t resolverfuzz-powerdns:4.9.0 .
 echo "[4/9] Building docker image resolverfuzz-powerdns finished..."
 
 # MaraDNS 3.5.0022

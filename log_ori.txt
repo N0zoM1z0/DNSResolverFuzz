@@ -1,0 +1,448 @@
+(resolverfuzz) [work@ovh-self-infra-host04 test_infra]$ cat log.txt 
+Error response from daemon: No such container: dnstap-concurrent
+Error response from daemon: No such container: dnstap-concurrent
+rm: cannot remove '/home/work/.fuzz/ResolverFuzz/test_infra/dump/dnstap/log.dnstap': No such file or directory
+Error response from daemon: No such container: attacker-0-concurrent
+Error response from daemon: No such container: attacker-0-concurrent
+Error response from daemon: No such container: auth_srv-0-concurrent
+Error response from daemon: No such container: auth_srv-0-concurrent
+Error response from daemon: No such container: bind9-0-concurrent
+Error response from daemon: No such container: bind9-0-concurrent
+Error response from daemon: No such container: unbound-0-concurrent
+Error response from daemon: No such container: unbound-0-concurrent
+Error response from daemon: No such container: powerdns-0-concurrent
+Error response from daemon: No such container: powerdns-0-concurrent
+Error response from daemon: No such container: knot-0-concurrent
+Error response from daemon: No such container: knot-0-concurrent
+Error response from daemon: No such container: maradns-0-concurrent
+Error response from daemon: No such container: maradns-0-concurrent
+Error response from daemon: No such container: technitium-0-concurrent
+Error response from daemon: No such container: technitium-0-concurrent
+Error response from daemon: No such container: attacker-1-concurrent
+Error response from daemon: No such container: attacker-1-concurrent
+Error response from daemon: No such container: auth_srv-1-concurrent
+Error response from daemon: No such container: auth_srv-1-concurrent
+Error response from daemon: No such container: bind9-1-concurrent
+Error response from daemon: No such container: bind9-1-concurrent
+Error response from daemon: No such container: unbound-1-concurrent
+Error response from daemon: No such container: unbound-1-concurrent
+Error response from daemon: No such container: powerdns-1-concurrent
+Error response from daemon: No such container: powerdns-1-concurrent
+Error response from daemon: No such container: knot-1-concurrent
+Error response from daemon: No such container: knot-1-concurrent
+Error response from daemon: No such container: maradns-1-concurrent
+Error response from daemon: No such container: maradns-1-concurrent
+Error response from daemon: No such container: technitium-1-concurrent
+Error response from daemon: No such container: technitium-1-concurrent
+bind9 eval: True
+Unbound eval: True
+PowerDNS eval: True
+Knot eval: True
+MaraDNS eval: True
+Technitium eval: True
+is_debug: False
+unit_size: 2
+total_payload_num: 2
+result_folder_path: /home/work/.fuzz/ResolverFuzz/test_infra/recursive_test_res
+old DNSTap cleaned
+DNSTap created
+DNSTap started
+result folder 0 cleaned
+result folder 1 cleaned
+dump folder bind9/0 cleaned
+dump folder bind9/1 cleaned
+dump folder unbound/0 cleaned
+dump folder unbound/1 cleaned
+dump folder powerdns/0 cleaned
+dump folder powerdns/1 cleaned
+dump folder knot/0 cleaned
+dump folder knot/1 cleaned
+dump folder maradns/0 cleaned
+dump folder maradns/1 cleaned
+dump folder technitium/0 cleaned
+dump folder technitium/1 cleaned
+=============== start units ===============
+Unit #0 old attacker cleaned
+Unit #0 attacker created
+Unit #0 old auth_srv cleaned
+Unit #0 auth_srv created
+Unit #0 old bind9 cleaned
+conf folder path: /home/work/.fuzz/ResolverFuzz/config/conf_recur_concurrent/bind9
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/bind9/0
+Unit #0 bind9 created
+Unit #0 bind9 started
+Unit #0 old unbound cleaned
+conf folder path: /home/work/.fuzz/ResolverFuzz/config/conf_recur_concurrent/unbound
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/unbound/0
+Unit #0 unbound created
+Unit #0 unbound started
+Unit #0 old powerdns cleaned
+conf folder path: /home/work/.fuzz/ResolverFuzz/config/conf_recur_concurrent/powerdns
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/powerdns/0
+Unit #0 powerdns created
+Unit #0 powerdns started
+Unit #0 old knot cleaned
+conf folder path: /home/work/.fuzz/ResolverFuzz/config/conf_recur_concurrent/knot
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/knot/0
+Unit #0 knot created
+Unit #0 knot started
+Unit #0 old maradns cleaned
+conf folder path: /home/work/.fuzz/ResolverFuzz/config/conf_recur_concurrent/maradns
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/maradns/0
+Unit #0 maradns created
+Unit #0 maradns started
+Unit #0 old technitium cleaned
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/technitium/0
+Unit #0 technitium created
+technitium set_config request: http://172.22.6.0:5380/api/settings/set?token=572b8cce4e410898425534e3a768cdce91171d35a451a20230cb86cc41a0f5b6&dnssecValidation=false&logqueries=true
+Unit #0 technitium started
+Unit #1 old attacker cleaned
+Unit #1 attacker created
+Unit #1 old auth_srv cleaned
+Unit #1 auth_srv created
+Unit #1 old bind9 cleaned
+conf folder path: /home/work/.fuzz/ResolverFuzz/config/conf_recur_concurrent/bind9
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/bind9/1
+Unit #1 bind9 created
+Unit #1 bind9 started
+Unit #1 old unbound cleaned
+conf folder path: /home/work/.fuzz/ResolverFuzz/config/conf_recur_concurrent/unbound
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/unbound/1
+Unit #1 unbound created
+Unit #1 unbound started
+Unit #1 old powerdns cleaned
+conf folder path: /home/work/.fuzz/ResolverFuzz/config/conf_recur_concurrent/powerdns
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/powerdns/1
+Unit #1 powerdns created
+Unit #1 powerdns started
+Unit #1 old knot cleaned
+conf folder path: /home/work/.fuzz/ResolverFuzz/config/conf_recur_concurrent/knot
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/knot/1
+Unit #1 knot created
+Unit #1 knot started
+Unit #1 old maradns cleaned
+conf folder path: /home/work/.fuzz/ResolverFuzz/config/conf_recur_concurrent/maradns
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/maradns/1
+Unit #1 maradns created
+Unit #1 maradns started
+Unit #1 old technitium cleaned
+dump folder path: /home/work/.fuzz/ResolverFuzz/test_infra/dump/technitium/1
+Unit #1 technitium created
+technitium set_config request: http://172.22.6.1:5380/api/settings/set?token=f3227ae101c542b0456c2f15b3f2ce6ef5497f14ab00125577901ec49f966a8b&dnssecValidation=false&logqueries=true
+Unit #1 technitium started
+/home/work/miniconda3/envs/resolverfuzz/lib/python3.8/site-packages/scapy/layers/ipsec.py:469: CryptographyDeprecationWarning: Blowfish has been deprecated
+  cipher=algorithms.Blowfish,
+/home/work/miniconda3/envs/resolverfuzz/lib/python3.8/site-packages/scapy/layers/ipsec.py:483: CryptographyDeprecationWarning: CAST5 has been deprecated
+  cipher=algorithms.CAST5,
+#|f^c0sil;"'.test0-recursive.qifanzhang.com.
+35
+30
+curr query payload: 1fee0e8000010000000000000c237c665e633073696c3b22270f74657374302d7265637572736976650a716966616e7a68616e6703636f6d0000020001
+curr response payload: ('8ca00001000300030001', '0f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00000200010000003c0024037375620f74657374302d7265637572736976650a716966616e7a68616e6703636f6d000f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00001000010000003c0024237375622e74657374302d7265637572736976652e716966616e7a68616e672e636f6d2e037375620c237c665e633073696c3b22270f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00000200010000003c003503737562037375620c237c665e633073696c3b22270f74657374302d7265637572736976650a716966616e7a68616e6703636f6d000f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00000f00010000003c002200000f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00037375620c237c665e633073696c3b22270f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00000600010000003c0072037375620c237c665e633073696c3b22270f74657374302d7265637572736976650a716966616e7a68616e6703636f6d000c237c665e633073696c3b22270f74657374302d7265637572736976650a716966616e7a68616e6703636f6d000000000000000000000000000000000000000000106e65772d237c665e633073696c3b22270f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00001000010000003c001f1e74657374302d7265637572736976652e716966616e7a68616e672e636f6d033b2434025b31012b0268690132015d01790337396002725b0131016a026a63026a650136032a712702715d03705f2f03716f7703396537016d022a32013b0340247a012d01680361786c02672203297178027e2503642d28016e0321233b017e032f6f65016b02293b023679022d35036f72730128027a7403376d3901740163015e0334212b013903666e330325227a01310265740368246e016a013d02647302607a017c032d3b2b0128013e026466026b3b0270290e74657374302d6677642d6f6e6c790a716966616e7a68616e6703636f6d00000200010000003c00d6033b2434025b31012b0268690132015d01790337396002725b0131016a026a63026a650136032a712702715d03705f2f03716f7703396537016d022a32013b0340247a012d01680361786c02672203297178027e2503642d28016e0321233b017e032f6f65016b02293b023679022d35036f72730128027a7403376d3901740163015e0334212b013903666e330325227a01310265740368246e016a013d02647302607a017c032d3b2b0128013e026466026b3b0270290e74657374302d6677642d6f6e6c790a716966616e7a68616e6703636f6d00')
+Unit #0 auth_srv restarted
+Unit #0 auth_srv started
+4|v&,6dph~-k+7$]`2r3tba#@^.test1-fwd-fallback.qifanzhang.com.
+29
+34
+33
+34
+curr query payload: 5acd06a000010000000000001a347c76262c366470687e2d6b2b37245d6032723374626123405e1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d0000050001
+curr response payload: ('a9900001000200020003', '1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d00000600010000003c005a1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d001274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d0000000000000000000000000000000000000000001274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d00001000010000003c001e1d74657374312d6677642d6f6e6c792e716966616e7a68616e672e636f6d1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d00001000010000003c00232274657374312d6677642d66616c6c6261636b2e716966616e7a68616e672e636f6d2e262a33787a2f7b2739616c3462217e79756a6e373b26285b3e67703d6b5d2469643640653c68230f74657374312d7265637572736976650a716966616e7a68616e6703636f6d00001000010000003c00222174657374312d6677642d66616c6c6261636b2e716966616e7a68616e672e636f6d037375621a347c76262c366470687e2d6b2b37245d6032723374626123405e1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d00000500010000003c00b90a62755e37632921327222046b5d6761092667603774796f287c0772782c69773f6e046722793409383a793e6b28677a65092228686f7c317a67250a3a5d7b392d21622c7d610477353f24022d63093e2a3969736d3a7c5c082f7d32616923357a0a733d5c795d7e7d25237203647e39067178267e6229056c38606471032d7238065d5b27403d7e02635b0370777809653d2a716470757d3a0f74657374312d7265637572736976650a716966616e7a68616e6703636f6d001e6e65772d347c76262c366470687e2d6b2b37245d6032723374626123405e1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d00001000010000003c00232274657374312d6677642d66616c6c6261636b2e716966616e7a68616e672e636f6d2e1e6e65772d347c76262c366470687e2d6b2b37245d6032723374626123405e1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d00000500010000003c0046226e65772d6e65772d347c76262c366470687e2d6b2b37245d6032723374626123405e1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d00')
+Unit #1 auth_srv restarted
+Unit #1 auth_srv started
+=============== Unit #1 knot tcpdump started ===============
+=============== send query to knot ===============
+curr knot response: b"b'5acd808200010000000000001a347c76262c366470687e2d6b2b37245d6032723374626123405e1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d0000050001'\n"
+=============== Unit #1 knot tcpdump stopped ===============
+=============== Unit #1 knot response saved ===============
+=============== Unit #1 knot log saved ===============
+=============== Unit #1 knot tcpdump saved ===============
+Unit #1 knot restarted
+=============== Unit #0 knot tcpdump started ===============
+=============== send query to knot ===============
+curr knot response: b"b'1fee888200010000000000000c237c665e633073696c3b22270f74657374302d7265637572736976650a716966616e7a68616e6703636f6d0000020001'\n"
+=============== Unit #0 knot tcpdump stopped ===============
+=============== Unit #0 knot response saved ===============
+=============== Unit #0 knot log saved ===============
+=============== Unit #0 knot tcpdump saved ===============
+Unit #0 knot restarted
+=============== Unit #0 unbound tcpdump started ===============
+=============== send query to unbound ===============
+curr unbound response: b"b'1fee8c8100010000000000000c237c665e633073696c3b22270f74657374302d7265637572736976650a716966616e7a68616e6703636f6d0000020001'\n"
+=============== Unit #0 unbound cache dumped ===============
+=============== Unit #0 unbound tcpdump stopped ===============
+=============== Unit #0 unbound response saved ===============
+=============== Unit #0 unbound cache saved ===============
+=============== Unit #0 unbound log saved and cleaned ===============
+=============== Unit #0 unbound tcpdump saved ===============
+=============== Unit #0 unbound cache flushed ===============
+=============== Unit #0 unbound running normally ===============
+=============== Unit #0 bind9 tcpdump started ===============
+=============== send query to bind9 ===============
+curr bind9 response: b"b'1fee88040000000000000000'\n"
+=============== Unit #0 bind9 cache dumped ===============
+=============== Unit #0 bind9 tcpdump stopped ===============
+=============== Unit #0 bind9 response saved ===============
+=============== Unit #0 bind9 cache saved ===============
+=============== Unit #0 bind9 log saved and cleaned ===============
+=============== Unit #0 bind9 tcpdump saved ===============
+=============== Unit #0 bind9 cache flushed ===============
+=============== Unit #0 bind9 running normally ===============
+=============== Unit #1 unbound tcpdump started ===============
+=============== send query to unbound ===============
+curr unbound response: b"b'5acd84a100010000000000001a347c76262c366470687e2d6b2b37245d6032723374626123405e1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d0000050001'\n"
+=============== Unit #1 unbound cache dumped ===============
+=============== Unit #1 unbound tcpdump stopped ===============
+=============== Unit #1 unbound response saved ===============
+=============== Unit #1 unbound cache saved ===============
+=============== Unit #1 unbound log saved and cleaned ===============
+=============== Unit #1 unbound tcpdump saved ===============
+=============== Unit #1 unbound cache flushed ===============
+=============== Unit #1 unbound running normally ===============
+=============== Unit #1 technitium tcpdump started ===============
+=============== send query to technitium ===============
+curr technitium response: b"b'5acd808100010000000000001a347c76262c366470687e2d6b2b37245d6032723374626123405e1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d0000050001'\n"
+=============== Unit #1 technitium cache dumped and saved ===============
+=============== Unit #1 technitium tcpdump stopped ===============
+=============== Unit #1 technitium response saved ===============
+=============== Unit #1 technitium log saved ===============
+=============== Unit #1 technitium tcpdump saved ===============
+=============== Unit #1 technitium cache and log flushed ===============
+=============== Unit #1 bind9 tcpdump started ===============
+=============== send query to bind9 ===============
+curr bind9 response: b"b'5acd808000010000000d00001a347c76262c366470687e2d6b2b37245d6032723374626123405e1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d000005000100000200010036ee80001401430c524f4f542d53455256455253034e455400c04e000200010036ee8000040148c05bc04e000200010036ee800004014bc05bc04e000200010036ee800004014cc05bc04e000200010036ee8000040142c05bc04e000200010036ee8000040145c05bc04e000200010036ee800004014dc05bc04e000200010036ee8000040146c05bc04e000200010036ee8000040144c05bc04e000200010036ee8000040149c05bc04e000200010036ee8000040141c05bc04e000200010036ee800004014ac05bc04e000200010036ee8000040147c05b'\n"
+=============== Unit #1 bind9 cache dumped ===============
+=============== Unit #1 bind9 tcpdump stopped ===============
+=============== Unit #1 bind9 response saved ===============
+=============== Unit #1 bind9 cache saved ===============
+=============== Unit #1 bind9 log saved and cleaned ===============
+=============== Unit #1 bind9 tcpdump saved ===============
+=============== Unit #1 bind9 cache flushed ===============
+=============== Unit #1 bind9 running normally ===============
+=============== Unit #1 powerdns tcpdump started ===============
+=============== send query to powerdns ===============
+curr powerdns response: b"b'5acd808000010000000000001a347c76262c366470687e2d6b2b37245d6032723374626123405e1274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d0000050001'\n"
+=============== Unit #1 powerdns cache dumped ===============
+=============== Unit #1 powerdns tcpdump stopped ===============
+=============== Unit #1 powerdns response saved ===============
+=============== Unit #1 powerdns cache saved ===============
+Unit #1 powerdns started
+=============== Unit #1 powerdns log saved and cleaned ===============
+=============== Unit #1 powerdns tcpdump saved ===============
+=============== Unit #1 powerdns cache flushed ===============
+=============== Unit #1 powerdns running normally ===============
+=============== Unit #0 technitium tcpdump started ===============
+=============== send query to technitium ===============
+curr technitium response: b"b'1fee888400010000000000000c237c665e633073696c3b22270f74657374302d7265637572736976650a716966616e7a68616e6703636f6d0000020001'\n"
+=============== Unit #0 technitium cache dumped and saved ===============
+=============== Unit #0 technitium tcpdump stopped ===============
+=============== Unit #0 technitium response saved ===============
+=============== Unit #0 technitium log saved ===============
+=============== Unit #0 technitium tcpdump saved ===============
+=============== Unit #0 technitium cache and log flushed ===============
+=============== Unit #1 maradns tcpdump started ===============
+=============== send query to maradns ===============
+curr maradns response: b'No response for 5 seconds, timed out\n'
+=============== Unit #1 maradns tcpdump stopped ===============
+=============== Unit #1 maradns response saved ===============
+=============== Unit #1 maradns log saved ===============
+=============== Unit #1 maradns tcpdump saved ===============
+Unit #1 maradns restarted
+=============== Unit #0 maradns tcpdump started ===============
+=============== send query to maradns ===============
+curr maradns response: b'No response for 5 seconds, timed out\n'
+=============== Unit #0 maradns tcpdump stopped ===============
+=============== Unit #0 maradns response saved ===============
+=============== Unit #0 maradns log saved ===============
+=============== Unit #0 maradns tcpdump saved ===============
+Unit #0 maradns restarted
+=============== Unit #0 powerdns tcpdump started ===============
+=============== send query to powerdns ===============
+curr powerdns response: b'No response for 5 seconds, timed out\n'
+=============== Unit #0 powerdns cache dumped ===============
+=============== Unit #0 powerdns tcpdump stopped ===============
+=============== Unit #0 powerdns response saved ===============
+=============== Unit #0 powerdns cache saved ===============
+Unit #0 powerdns started
+=============== Unit #0 powerdns log saved and cleaned ===============
+=============== Unit #0 powerdns tcpdump saved ===============
+=============== Unit #0 powerdns cache flushed ===============
+=============== Unit #0 powerdns running normally ===============
+=============== DNATap log saved ===============
+Unit #1 rounds completed: 0
+k0`>"o5_hlyj|%;f('@g<\/,}-7)61ezpi?*3.test1-recursive.qifanzhang.com.
+curr query payload: 00fb01d00001000000000000256b30603e226f355f686c796a7c253b66282740673c5c2f2c7d2d37293631657a70693f2a330f74657374312d7265637572736976650a716966616e7a68616e6703636f6d00001c0001
+curr response payload: ('87410001000200000002', '256b30603e226f355f686c796a7c253b66282740673c5c2f2c7d2d37293631657a70693f2a330f74657374312d7265637572736976650a716966616e7a68616e6703636f6d00001c00010000003c001020010000000000000000000000001234256b30603e226f355f686c796a7c253b66282740673c5c2f2c7d2d37293631657a70693f2a330f74657374312d7265637572736976650a716966616e7a68616e6703636f6d00000200010000003c00231274657374312d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d00296e65772d6b30603e226f355f686c796a7c253b66282740673c5c2f2c7d2d37293631657a70693f2a330f74657374312d7265637572736976650a716966616e7a68616e6703636f6d00001c00010000003c001020010000000000000000000000001234256b30603e226f355f686c796a7c253b66282740673c5c2f2c7d2d37293631657a70693f2a330f74657374312d7265637572736976650a716966616e7a68616e6703636f6d00001c00010000003c001020010000000000000000000000001234')
+Unit #1 auth_srv restarted
+Unit #1 auth_srv started
+=============== DNATap log saved ===============
+Unit #0 rounds completed: 0
+6d3n|[:w#bra.test0-recursive.qifanzhang.com.
+52
+44
+31
+55
+31
+31
+15
+81
+curr query payload: 247d055000010000000000000c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d0000630001
+curr response payload: ('87600001000500040003', '037375620c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00001000010000003c0035346e65772d7375622e3664336e7c5b3a77236272612e74657374302d7265637572736976652e716966616e7a68616e672e636f6d2e037375620c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00002e00010000003c0050000105020000000000000000000000000000076e65772d7375620c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d007369676e61747572650c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00001000010000003c002d2c3664336e7c5b3a77236272612e74657374302d7265637572736976652e716966616e7a68616e672e636f6d2e0c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00000500010000003c0031037375620c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00106e65772d3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00001000010000003c00201f74657374302d7265637572736976652e716966616e7a68616e672e636f6d2e037375620c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00001000010000003c0038376c24642d7c335f753e6f747d5e6b767b262338786e327a402e74657374302d6677642d6f6e6c792e716966616e7a68616e672e636f6d2e106e65772d3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00001c00010000003c0010200100000000000000000000000012340f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00001000010000003c00201f74657374302d7265637572736976652e716966616e7a68616e672e636f6d2e106e65772d3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00001000010000003c00201f74657374302d7265637572736976652e716966616e7a68616e672e636f6d2e0f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00001000010000003c00100f716966616e7a68616e672e636f6d2e106e65772d3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00001000010000003c005251393e5b3d2f6f26766e2b322e657c3868252d72787b262f74737060675b37793634293240752c6d633e6f3f275c3c3922242e74657374302d7265637572736976652e716966616e7a68616e672e636f6d2e0f74657374302d7265637572736976650a716966616e7a68616e6703636f6d00000c00010000003c004d2963407024675e5f7c7e3c2c767d397a5c6c3038283a69277b732536266d6864772b727523745b216a6e1274657374302d6677642d66616c6c6261636b0a716966616e7a68616e6703636f6d00')
+Unit #0 auth_srv restarted
+Unit #0 auth_srv started
+=============== Unit #1 knot tcpdump started ===============
+=============== send query to knot ===============
+curr knot response: b"b'00fb81920001000000000000256b30603e226f355f686c796a7c253b66282740673c5c2f2c7d2d37293631657a70693f2a330f74657374312d7265637572736976650a716966616e7a68616e6703636f6d00001c0001'\n"
+=============== Unit #1 knot tcpdump stopped ===============
+=============== Unit #1 knot response saved ===============
+=============== Unit #1 knot log saved ===============
+=============== Unit #1 knot tcpdump saved ===============
+Unit #1 knot restarted
+=============== Unit #1 technitium tcpdump started ===============
+=============== send query to technitium ===============
+curr technitium response: b"b'00fb81810001000000000000256b30603e226f355f686c796a7c253b66282740673c5c2f2c7d2d37293631657a70693f2a330f74657374312d7265637572736976650a716966616e7a68616e6703636f6d00001c0001'\n"
+=============== Unit #1 technitium cache dumped and saved ===============
+=============== Unit #1 technitium tcpdump stopped ===============
+=============== Unit #1 technitium response saved ===============
+=============== Unit #1 technitium log saved ===============
+=============== Unit #1 technitium tcpdump saved ===============
+=============== Unit #1 technitium cache and log flushed ===============
+=============== Unit #1 bind9 tcpdump started ===============
+=============== send query to bind9 ===============
+curr bind9 response: b"b'00fb81920001000000000000256b30603e226f355f686c796a7c253b66282740673c5c2f2c7d2d37293631657a70693f2a330f74657374312d7265637572736976650a716966616e7a68616e6703636f6d00001c0001'\n"
+=============== Unit #1 bind9 cache dumped ===============
+=============== Unit #1 bind9 tcpdump stopped ===============
+=============== Unit #1 bind9 response saved ===============
+=============== Unit #1 bind9 cache saved ===============
+=============== Unit #1 bind9 log saved and cleaned ===============
+=============== Unit #1 bind9 tcpdump saved ===============
+=============== Unit #1 bind9 cache flushed ===============
+=============== Unit #1 bind9 running normally ===============
+=============== Unit #1 unbound tcpdump started ===============
+=============== send query to unbound ===============
+curr unbound response: b"b'00fb81920001000000000000256b30603e226f355f686c796a7c253b66282740673c5c2f2c7d2d37293631657a70693f2a330f74657374312d7265637572736976650a716966616e7a68616e6703636f6d00001c0001'\n"
+=============== Unit #1 unbound cache dumped ===============
+=============== Unit #1 unbound tcpdump stopped ===============
+=============== Unit #1 unbound response saved ===============
+=============== Unit #1 unbound cache saved ===============
+=============== Unit #1 unbound log saved and cleaned ===============
+=============== Unit #1 unbound tcpdump saved ===============
+=============== Unit #1 unbound cache flushed ===============
+=============== Unit #1 unbound running normally ===============
+=============== Unit #1 powerdns tcpdump started ===============
+=============== send query to powerdns ===============
+curr powerdns response: b"b'00fb81820001000000000000256b30603e226f355f686c796a7c253b66282740673c5c2f2c7d2d37293631657a70693f2a330f74657374312d7265637572736976650a716966616e7a68616e6703636f6d00001c0001'\n"
+=============== Unit #1 powerdns cache dumped ===============
+=============== Unit #1 powerdns tcpdump stopped ===============
+=============== Unit #1 powerdns response saved ===============
+=============== Unit #1 powerdns cache saved ===============
+Unit #1 powerdns started
+=============== Unit #1 powerdns log saved and cleaned ===============
+=============== Unit #1 powerdns tcpdump saved ===============
+=============== Unit #1 powerdns cache flushed ===============
+=============== Unit #1 powerdns running normally ===============
+=============== Unit #0 knot tcpdump started ===============
+=============== send query to knot ===============
+curr knot response: b"b'247d819200010000000000000c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d0000630001'\n"
+=============== Unit #0 knot tcpdump stopped ===============
+=============== Unit #0 knot response saved ===============
+=============== Unit #0 knot log saved ===============
+=============== Unit #0 knot tcpdump saved ===============
+Unit #0 knot restarted
+=============== Unit #0 bind9 tcpdump started ===============
+=============== send query to bind9 ===============
+curr bind9 response: b"b'247d819200010000000000000c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d0000630001'\n"
+=============== Unit #0 bind9 cache dumped ===============
+=============== Unit #0 bind9 tcpdump stopped ===============
+=============== Unit #0 bind9 response saved ===============
+=============== Unit #0 bind9 cache saved ===============
+=============== Unit #0 bind9 log saved and cleaned ===============
+=============== Unit #0 bind9 tcpdump saved ===============
+=============== Unit #0 bind9 cache flushed ===============
+=============== Unit #0 bind9 running normally ===============
+=============== Unit #0 technitium tcpdump started ===============
+=============== send query to technitium ===============
+curr technitium response: b"b'247d818100010000000000000c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d0000630001'\n"
+=============== Unit #0 technitium cache dumped and saved ===============
+=============== Unit #0 technitium tcpdump stopped ===============
+=============== Unit #0 technitium response saved ===============
+=============== Unit #0 technitium log saved ===============
+=============== Unit #0 technitium tcpdump saved ===============
+=============== Unit #0 technitium cache and log flushed ===============
+=============== Unit #0 unbound tcpdump started ===============
+=============== send query to unbound ===============
+curr unbound response: b"b'247d839000010001000100010c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d0000630001c00c000500010000003c000603737562c00cc019001000010000003c00201f74657374302d7265637572736976652e716966616e7a68616e672e636f6d2ec019000c00010000003c003f2963407024675e5f7c7e3c2c767d397a5c6c3038283a69277b732536266d6864772b727523745b216a6e1274657374302d6677642d66616c6c6261636bc029'\n"
+=============== Unit #0 unbound cache dumped ===============
+=============== Unit #0 unbound tcpdump stopped ===============
+=============== Unit #0 unbound response saved ===============
+=============== Unit #0 unbound cache saved ===============
+=============== Unit #0 unbound log saved and cleaned ===============
+=============== Unit #0 unbound tcpdump saved ===============
+=============== Unit #0 unbound cache flushed ===============
+=============== Unit #0 unbound running normally ===============
+=============== Unit #0 powerdns tcpdump started ===============
+=============== send query to powerdns ===============
+curr powerdns response: b"b'247d818200010000000000000c3664336e7c5b3a77236272610f74657374302d7265637572736976650a716966616e7a68616e6703636f6d0000630001'\n"
+=============== Unit #0 powerdns cache dumped ===============
+=============== Unit #0 powerdns tcpdump stopped ===============
+=============== Unit #0 powerdns response saved ===============
+=============== Unit #0 powerdns cache saved ===============
+Unit #0 powerdns started
+=============== Unit #0 powerdns log saved and cleaned ===============
+=============== Unit #0 powerdns tcpdump saved ===============
+=============== Unit #0 powerdns cache flushed ===============
+=============== Unit #0 powerdns running normally ===============
+=============== Unit #1 maradns tcpdump started ===============
+=============== send query to maradns ===============
+curr maradns response: b'No response for 5 seconds, timed out\n'
+=============== Unit #1 maradns tcpdump stopped ===============
+=============== Unit #1 maradns response saved ===============
+=============== Unit #1 maradns log saved ===============
+=============== Unit #1 maradns tcpdump saved ===============
+Unit #1 maradns restarted
+Unit #1 rounds completed: 1
+=============== Unit #0 maradns tcpdump started ===============
+=============== send query to maradns ===============
+curr maradns response: b'No response for 5 seconds, timed out\n'
+=============== Unit #0 maradns tcpdump stopped ===============
+=============== Unit #0 maradns response saved ===============
+=============== Unit #0 maradns log saved ===============
+=============== Unit #0 maradns tcpdump saved ===============
+Unit #0 maradns restarted
+Unit #0 rounds completed: 1
+=============== DNATap log saved finally ===============
+Unit #0 attacker stopped
+Unit #0 attacker removed
+Unit #1 attacker stopped
+Unit #1 attacker removed
+Unit #1 maradns stopped
+Unit #1 maradns removed
+Unit #0 maradns stopped
+Unit #0 maradns removed
+Unit #1 auth_srv stopped
+Unit #1 auth_srv removed
+Unit #0 auth_srv stopped
+Unit #0 auth_srv removed
+Unit #0 bind9 stopped
+Unit #0 bind9 removed
+Unit #0 powerdns stopped
+Unit #0 powerdns removed
+Unit #0 unbound stopped
+Unit #0 unbound removed
+Unit #1 bind9 stopped
+Unit #1 bind9 removed
+Unit #1 knot stopped
+Unit #1 knot removed
+Unit #1 powerdns stopped
+Unit #1 powerdns removed
+Unit #0 technitium stopped
+Unit #0 technitium removed
+Unit #1 unbound stopped
+Unit #1 unbound removed
+Unit #0 knot stopped
+Unit #0 knot removed
+Unit #1 technitium stopped
+Unit #1 technitium removed
+DNSTap stopped
+DNSTap removed
+(resolverfuzz) [work@ovh-self-infra-host04 test_infra]$ 
