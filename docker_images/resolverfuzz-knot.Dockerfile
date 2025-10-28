@@ -1,4 +1,3 @@
-# syntax=docker/dockerfile:1
 FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -9,7 +8,7 @@ RUN apt-get update && apt-get install -y wget build-essential pkg-config tcpdump
 RUN apt-get install -y xz-utils automake libtool gnutls-dev liburcu-dev liblmdb-dev libedit-dev meson ninja-build cmake libuv1-dev luajit libluajit-5.1-dev socat libfstrm-dev libprotobuf-dev libprotobuf-c-dev protobuf-c-compiler
 
 # download source code
-RUN wget https://secure.nic.cz/files/knot-dns/knot-3.1.8.tar.xz & \
+RUN wget https://secure.nic.cz/files/knot-dns/knot-3.1.8.tar.xz && \
     wget https://secure.nic.cz/files/knot-resolver/knot-resolver-5.5.0.tar.xz
 
 # extract the source code

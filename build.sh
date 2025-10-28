@@ -11,8 +11,8 @@ fi
 cd docker_images
 echo "Building docker images..."
 
-# Bind 9 9.18.0
-sudo docker build -f resolverfuzz-bind9.Dockerfile -t resolverfuzz-bind9:9.18.0 .
+# Bind 9 9.20.0
+sudo docker build -f resolverfuzz-bind9.Dockerfile -t resolverfuzz-bind9:9.20.0 .
 echo "[1/9] Building docker image resolverfuzz-bind9 finished..."
 
 # Unbound 1.16.0
