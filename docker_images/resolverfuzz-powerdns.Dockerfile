@@ -21,3 +21,4 @@ RUN mkdir -p /var/run/powerdns && mkdir -p /var/run/pdns-recursor
 
 # copy the start script
 COPY --chown=root:root powerdns_recursor.sh /start.sh
+RUN chmod +x /start.sh

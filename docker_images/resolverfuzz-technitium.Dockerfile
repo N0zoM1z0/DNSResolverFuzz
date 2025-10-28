@@ -21,3 +21,4 @@ RUN mkdir -p /var/cache/technitium
 
 # copy the start script
 COPY --chown=root:root technitium.sh /etc/technitium/start.sh
+RUN chmod +x /etc/technitium/start.sh

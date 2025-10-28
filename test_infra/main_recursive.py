@@ -41,17 +41,17 @@ is_debug = False
 dns_sw_name_list = ['bind9', 'unbound', 'powerdns', 'knot', 'maradns', 'technitium']
 
 ## image tables
-bind9_image = 'bind9:9.18.0'
-unbound_image = 'unbound:1.16.0'
-powerdns_image = 'powerdns:4.7.0'
-knot_image = 'knot:5.5.0'
-maradns_image = 'maradns:3.5.0022'
-technitium_image = 'technitium:10.0.1'
+bind9_image = 'resolverfuzz-bind9:9.20.0'
+unbound_image = 'resolverfuzz-unbound:1.16.0'
+powerdns_image = 'resolverfuzz-powerdns:4.7.0'
+knot_image = 'resolverfuzz-knot:5.5.0'
+maradns_image = 'resolverfuzz-maradns:3.5.0022'
+technitium_image = 'resolverfuzz-technitium:10.0.1'
 
-dnstap_listener_image = 'dnstap-listener'
+dnstap_listener_image = 'resolverfuzz-dnstap-listener'
 
-attacker_image = 'attacker'
-auth_srv_image = 'auth-srv'
+attacker_image = 'resolverfuzz-attacker'
+auth_srv_image = 'resolverfuzz-auth-srv'
 
 ## DNS sw container names
 test_name_suffix = 'concurrent'
@@ -864,7 +864,7 @@ class Bind9Container:
 			detach = True,
 			tty = True
 		)
-		exit_code, output = self.container.exec_run(['/bind-9.18.0/bin/named/named', '-f', '-d', '5', '-n', '1'], detach=True)
+		exit_code, output = self.container.exec_run(['/bind-9.20.0/bin/named/named', '-f', '-d', '5', '-n', '1'], detach=True)
 		print('Unit #{} bind9 started'.format(self.unit_num))
 		return
 
@@ -872,7 +872,7 @@ class Bind9Container:
 		# This method `restart` is used to restart bind9 when it's crashed ONLY.
 		# If it exits normally, please use cache flush instead of restarting the whole program!
 		exit_code, output = self.container.exec_run(['pkill', '-9', 'named'])
-		exit_code, output = self.container.exec_run(['/bind-9.18.0/bin/named/named', '-f', '-d', '5', '-n', '1'], detach=True)
+		exit_code, output = self.container.exec_run(['/bind-9.20.0/bin/named/named', '-f', '-d', '5', '-n', '1'], detach=True)
 		print('Unit #{} bind9 restarted'.format(self.unit_num))
 		return
 
