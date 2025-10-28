@@ -11,10 +11,10 @@ RUN apt-get install -y libuv1-dev libnghttp2-dev libssl-dev libcap-dev \
     protobuf-c-compiler libjemalloc-dev tcpdump golang-github-dnstap-golang-dnstap-cli liburcu-dev
 
 # download source code
-RUN wget https://downloads.isc.org/isc/bind9/9.20.0/bind-9.20.0.tar.xz
+RUN wget https://downloads.isc.org/isc/bind9/9.18.41/bind-9.18.41.tar.xz
 
 # extract the source code
-RUN tar -xf bind-9.20.0.tar.xz
+RUN tar -xf bind-9.18.41.tar.xz
 
 # build from source code
-RUN cd bind-9.20.0 && ./configure --sysconfdir=/etc/bind/ --enable-dnstap && make -j4 && make install && ldconfig && mkdir -p /etc/bind/ && rndc-confgen -a
+RUN cd bind-9.18.41 && ./configure --sysconfdir=/etc/bind/ --enable-dnstap && make -j4 && make install && ldconfig && mkdir -p /etc/bind/ && rndc-confgen -a

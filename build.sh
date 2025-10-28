@@ -11,12 +11,12 @@ fi
 cd docker_images
 echo "Building docker images..."
 
-# Bind 9 9.20.0
-sudo docker build -f resolverfuzz-bind9.Dockerfile -t resolverfuzz-bind9:9.20.0 .
+# Bind 9 9.18.41 [modified from 9.18.0]
+sudo docker build -f resolverfuzz-bind9.Dockerfile -t resolverfuzz-bind9:9.18.41 .
 echo "[1/9] Building docker image resolverfuzz-bind9 finished..."
 
-# Unbound 1.16.0
-sudo docker build -f resolverfuzz-unbound.Dockerfile -t resolverfuzz-unbound:1.16.0 .
+# Unbound 1.24.1 [modified from 1.16.0]
+sudo docker build -f resolverfuzz-unbound.Dockerfile -t resolverfuzz-unbound:1.24.1 .
 echo "[2/9] Building docker image resolverfuzz-unbound finished..."
 
 # Knot Resolver 5.5.0

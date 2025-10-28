@@ -4,7 +4,8 @@ from cache_analyzer import CacheAnalyzer
 
 ########################################################################################################################
 
-res_folder_path = '/home/xuesong/proj/ResolverFuzz/test_infra/cdns_test_res'
+res_folder_path = '/dsk/hdd/home/llmft/Web2/DNSResolverFuzz/test_infra/cdns_test_res'
+res_folder_path = '/home/work/.fuzz/DNSResolverFuzz/test_infra/cdns_test_res'
 
 # Forward-only mode
 count_overall = {}

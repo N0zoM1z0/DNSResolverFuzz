@@ -24,7 +24,7 @@ conda activate resolverfuzz
 # from ctypes import cdll
 # LIBC = cdll.LoadLibrary("/usr/lib/x86_64-linux-gnu/libc.so.6")
 PYTHON_PATH=$(which python)
-sudo $PYTHON_PATH main_recursive.py --unit_size 2 --payload_num 6
+sudo $PYTHON_PATH main_recursive.py --unit_size 2 --payload_num 6 > log.txt 2>&1
 
 ls -R recursive_test_res
 
@@ -34,7 +34,7 @@ data_process（differential analysis）
 
 ```bash
 cd ../data_process
-sudo chown -R llmft:llmft ../test_infra/recursive_test_res
+sudo chown -R llmft:llmft ../test_infra/recursive_test_res # sudo chown -R work:work ../test_infra/recursive_test_res
 
 python parser_query.py --res_folder ../test_infra/recursive_test_res
 python parser_response.py --res_folder ../test_infra/recursive_test_res

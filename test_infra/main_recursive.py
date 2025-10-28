@@ -41,8 +41,8 @@ is_debug = False
 dns_sw_name_list = ['bind9', 'unbound', 'powerdns', 'knot', 'maradns', 'technitium']
 
 ## image tables
-bind9_image = 'resolverfuzz-bind9:9.20.0'
-unbound_image = 'resolverfuzz-unbound:1.16.0'
+bind9_image = 'resolverfuzz-bind9:9.18.41'
+unbound_image = 'resolverfuzz-unbound:1.24.1'
 powerdns_image = 'resolverfuzz-powerdns:4.7.0'
 knot_image = 'resolverfuzz-knot:5.5.0'
 maradns_image = 'resolverfuzz-maradns:3.5.0022'
@@ -864,7 +864,7 @@ class Bind9Container:
 			detach = True,
 			tty = True
 		)
-		exit_code, output = self.container.exec_run(['/bind-9.20.0/bin/named/named', '-f', '-d', '5', '-n', '1'], detach=True)
+		exit_code, output = self.container.exec_run(['/bind-9.18.41/bin/named/named', '-f', '-d', '5', '-n', '1'], detach=True)
 		print('Unit #{} bind9 started'.format(self.unit_num))
 		return
 
@@ -872,7 +872,7 @@ class Bind9Container:
 		# This method `restart` is used to restart bind9 when it's crashed ONLY.
 		# If it exits normally, please use cache flush instead of restarting the whole program!
 		exit_code, output = self.container.exec_run(['pkill', '-9', 'named'])
-		exit_code, output = self.container.exec_run(['/bind-9.20.0/bin/named/named', '-f', '-d', '5', '-n', '1'], detach=True)
+		exit_code, output = self.container.exec_run(['/bind-9.18.41/bin/named/named', '-f', '-d', '5', '-n', '1'], detach=True)
 		print('Unit #{} bind9 restarted'.format(self.unit_num))
 		return
 
@@ -1062,7 +1062,7 @@ class UnboundContainer:
 	def start(self):
 		global dnstap_ip_addr
 
-		exit_code, output = self.container.exec_run('/unbound-1.16.0/unbound -d', detach=True)
+		exit_code, output = self.container.exec_run('/unbound-1.24.1/unbound -d', detach=True)
 		print('Unit #{} unbound started'.format(self.unit_num))
 		return
 
@@ -1070,7 +1070,7 @@ class UnboundContainer:
 		# This method `restart` is used to restart  when it's crashed ONLY.
 		# If it exits normally, please use cache flush instead of restarting the whole program!
 		exit_code, output = self.container.exec_run(['pkill', '-9', 'unbound'])
-		exit_code, output = self.container.exec_run('/unbound-1.16.0/unbound -d', detach=True)
+		exit_code, output = self.container.exec_run('/unbound-1.24.1/unbound -d', detach=True)
 		print('Unit #{} unbound restarted'.format(self.unit_num))
 		return
 
@@ -1173,7 +1173,7 @@ class UnboundContainer:
 		return
 
 	def cache_flush(self):
-		exit_code, output = self.container.exec_run('/unbound-1.16.0/unbound-control reload')
+		exit_code, output = self.container.exec_run('/unbound-1.24.1/unbound-control reload')
 
 		print('='*15, 'Unit #{} unbound cache flushed'.format(self.unit_num), '='*15)
 		return

@@ -10,10 +10,10 @@ RUN apt-get install -y libssl-dev libexpat1-dev \
     golang-github-dnstap-golang-dnstap-cli
 
 # download source code
-RUN wget https://nlnetlabs.nl/downloads/unbound/unbound-1.16.0.tar.gz
+RUN wget https://nlnetlabs.nl/downloads/unbound/unbound-1.24.1.tar.gz
 
 # extract the source code
-RUN tar -xf unbound-1.16.0.tar.gz
+RUN tar -xf unbound-1.24.1.tar.gz
 
 # build from source code
-RUN cd unbound-1.16.0 && ./configure --sysconfdir=/etc/ --enable-dnstap && make -j4 && make install
+RUN cd unbound-1.24.1 && ./configure --sysconfdir=/etc/ --enable-dnstap && make -j4 && make install
