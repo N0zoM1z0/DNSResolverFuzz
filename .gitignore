@@ -12,3 +12,10 @@ test_infra/recursive_test_res
 
 # System files
 .DS_Store
+
+# data_process
+data_process/traffic
+
+# downloaded sources
+docker_images/knot-3.1.8.tar.xz
+docker_images/knot-resolver-5.5.0.tar.xz

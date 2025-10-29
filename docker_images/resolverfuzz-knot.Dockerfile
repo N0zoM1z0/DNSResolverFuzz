@@ -7,9 +7,8 @@ RUN apt-get update && apt-get install -y wget build-essential pkg-config tcpdump
 # install app dependencies
 RUN apt-get install -y xz-utils automake libtool gnutls-dev liburcu-dev liblmdb-dev libedit-dev meson ninja-build cmake libuv1-dev luajit libluajit-5.1-dev socat libfstrm-dev libprotobuf-dev libprotobuf-c-dev protobuf-c-compiler
 
-# download source code
-RUN wget https://secure.nic.cz/files/knot-dns/knot-3.1.8.tar.xz && \
-    wget https://secure.nic.cz/files/knot-resolver/knot-resolver-5.5.0.tar.xz
+# copy source code
+COPY knot-3.1.8.tar.xz knot-resolver-5.5.0.tar.xz ./
 
 # extract the source code
 RUN tar -xf knot-3.1.8.tar.xz & tar -xf knot-resolver-5.5.0.tar.xz
