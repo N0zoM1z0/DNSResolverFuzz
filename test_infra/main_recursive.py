@@ -2053,7 +2053,15 @@ class AttackerContainer:
 
         def send_query(self, query_payload, curr_dns_ip, dns_sw_name):
                 curr_src_port = src_port_dict[dns_sw_name]
-
+                # +++ 新增的打印语句 +++
+                command_to_run = 'python3 /host_tmp/dns_send_socket_port.py {dns_payload_hex_str} {src_ip} {src_port} {dns_ip}'.format(
+                        dns_payload_hex_str = query_payload,
+                        src_ip = self.ipv4_addr,
+                        src_port = curr_src_port, 
+                        dns_ip = curr_dns_ip)
+                print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+                print(f"DEBUG: Executing command in attacker: {command_to_run}")
+                print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
                 exit_code, output = self.container.exec_run(
                 'python3 /host_tmp/dns_send_socket_port.py {dns_payload_hex_str} {src_ip} {src_port} {dns_ip}'.format(
                         dns_payload_hex_str = query_payload,

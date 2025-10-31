@@ -10,11 +10,29 @@ resolver_ip_list = {'172.22.', '172.17.'}
 # The default docker network is using IP range 172.17.0.x
 # The network we created is using IP range 172.22.x.x
 # So here we use this to distinguish the traffic between `client and resolver` and between `resolver and upstream server`.
-
+from scapy.error import Scapy_Exception
 def parse_pcap(filepath: str):
-    if os.path.exists(filepath) and os.path.isfile(filepath):
-        return PcapReader(filepath).read_all()
-    return None
+    """
+    Parses a pcap file and returns all packets.
+    Handles exceptions for invalid or empty files.
+    """
+    # 检查文件是否存在且是一个文件
+    if not (os.path.exists(filepath) and os.path.isfile(filepath)):
+        return None
+    
+    # 增加一个检查，判断文件大小是否为0，可以提前过滤掉空文件
+    if os.path.getsize(filepath) == 0:
+        print(f"Warning: Skipping empty file: {filepath}")
+        return None
+
+    try:
+        # 尝试读取pcap文件
+        packets = PcapReader(filepath).read_all()
+        return packets
+    except Scapy_Exception as e:
+        # 如果scapy抛出异常，说明文件格式有问题
+        print(f"Error processing file {filepath}: {e}")
+        return None
 
 
 class TrafficAnalyzer:
